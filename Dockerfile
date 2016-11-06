@@ -4,6 +4,7 @@ RUN git clone https://github.com/prose/gatekeeper.git && \
 	cd gatekeeper && \
 	npm install
 
+EXPOSE 9999
 
 WORKDIR /gatekeeper
-ENTRYPOINT ["nodejs", "server.js"]
+ENTRYPOINT ["node", "server.js"]
